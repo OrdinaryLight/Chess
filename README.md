@@ -18,19 +18,7 @@ A desktop chess game built with JavaFX, featuring single-player AI with multiple
 
 ## How to Run
 
-### Quick Start (Easiest!)
-
-**On Windows:**
-```bash
-run.bat
-```
-
-**On Mac/Linux:**
-```bash
-./run.sh
-```
-
-### Using Gradle Directly
+### Option 1: Using Gradle (Recommended)
 
 **On Windows:**
 ```bash
@@ -42,17 +30,17 @@ gradlew.bat run
 ./gradlew run
 ```
 
-### Create Standalone Distribution
+### Option 2: Build and Run JAR
 
-If you want to create a distributable package with launch scripts:
-
+**Build the application:**
 ```bash
-./gradlew installDist
+./gradlew build
 ```
 
-Then run the generated executable:
-- **Windows**: `build/install/chess-game/bin/chess-game.bat`
-- **Mac/Linux**: `build/install/chess-game/bin/chess-game`
+**Run the JAR:**
+```bash
+java -jar build/libs/chess-game-1.0-SNAPSHOT.jar
+```
 
 ## How to Play
 
@@ -122,8 +110,4 @@ To run tests:
 
 ## License
 
-This project is open source and available for educational purposes.
-
-## Acknowledgments
-
-Built following the Product Requirements Document for a well-architected chess game with emphasis on maintainability, extensibility, and user experience.
+This project is open source and available for all purposes.
