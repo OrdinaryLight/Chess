@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import com.example.chess.view.BoardView?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:id="root"
+            fx:controller="com.example.chess.controller.GameController"
+            styleClass="root">
+
+    <top>
+        <HBox alignment="CENTER" spacing="20" styleClass="top-bar">
+            <padding>
+                <Insets top="15" right="20" bottom="15" left="20"/>
+            </padding>
+            <Text fx:id="statusText" text="Current Turn: White" styleClass="status-text"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button fx:id="menuButton" text="Menu" onAction="#onMenuButton" styleClass="secondary-button"/>
+        </HBox>
+    </top>
+
+    <center>
+        <BoardView fx:id="boardView" styleClass="board-container">
+            <BorderPane.margin>
+                <Insets top="10" right="20" bottom="10" left="20"/>
+            </BorderPane.margin>
+        </BoardView>
+    </center>
+
+</BorderPane>

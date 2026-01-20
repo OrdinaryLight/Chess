@@ -1,0 +1,122 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #8b6f47, #6b5239);
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.title {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-fill: #f4e7d7;
+}
+
+.subtitle {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-fill: #e8d5c4;
+}
+
+.menu-button {
+    -fx-min-width: 200px;
+    -fx-min-height: 45px;
+    -fx-font-size: 16px;
+    -fx-background-color: #8b6f47;
+    -fx-text-fill: #f4e7d7;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-border-color: #5d4a2f;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}
+
+.menu-button:hover {
+    -fx-background-color: #a0845c;
+}
+
+.primary-button {
+    -fx-min-width: 120px;
+    -fx-min-height: 35px;
+    -fx-font-size: 14px;
+    -fx-background-color: #6b5239;
+    -fx-text-fill: #f4e7d7;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+    -fx-border-color: #4d3a27;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+}
+
+.primary-button:hover {
+    -fx-background-color: #7d6146;
+}
+
+.secondary-button {
+    -fx-min-width: 120px;
+    -fx-min-height: 35px;
+    -fx-font-size: 14px;
+    -fx-background-color: #9c8166;
+    -fx-text-fill: #3d2f1f;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+    -fx-border-color: #6b5a45;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #b09478;
+}
+
+.light-square {
+    -fx-fill: #f0d9b5;
+    -fx-stroke: #d4a574;
+    -fx-stroke-width: 1;
+}
+
+.dark-square {
+    -fx-fill: #8b6f47;
+    -fx-stroke: #715935;
+    -fx-stroke-width: 1;
+}
+
+.selected-square {
+    -fx-fill: #c4b16a;
+    -fx-stroke: #9a8e50;
+    -fx-stroke-width: 3;
+}
+
+.legal-move-square {
+    -fx-fill: rgba(196, 177, 106, 0.7);
+}
+
+.board-container {
+    -fx-background-color: #5d4a2f;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 15, 0, 0, 8);
+    -fx-border-color: #3d2f1f;
+    -fx-border-width: 3px;
+}
+
+.top-bar {
+    -fx-background-color: #6b5239;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+}
+
+.status-text {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-fill: #f4e7d7;
+}
+
+.text {
+    -fx-fill: #f4e7d7;
+}
+
+.combo-box {
+    -fx-background-color: #8b6f47;
+    -fx-border-color: #5d4a2f;
+    -fx-border-radius: 4px;
+}
+
+.radio-button {
+    -fx-text-fill: #f4e7d7;
+}

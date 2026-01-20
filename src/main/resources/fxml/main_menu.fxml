@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.chess.controller.MainMenuController"
+      alignment="CENTER"
+      spacing="20"
+      styleClass="root">
+
+    <padding>
+        <Insets top="40" right="40" bottom="40" left="40"/>
+    </padding>
+
+    <Text text="Chess Game" styleClass="title"/>
+
+    <Button fx:id="singlePlayerButton" text="1 Player" onAction="#onSinglePlayer" styleClass="menu-button"/>
+    <Button fx:id="twoPlayerButton" text="2 Player" onAction="#onTwoPlayer" styleClass="menu-button"/>
+    <Button fx:id="settingsButton" text="Settings" onAction="#onSettings" styleClass="menu-button"/>
+    <Button fx:id="exitButton" text="Exit" onAction="#onExit" styleClass="menu-button"/>
+
+    <VBox fx:id="gameSetupPanel" alignment="CENTER" spacing="15">
+        <Text text="Game Setup" styleClass="subtitle"/>
+
+        <VBox alignment="CENTER" spacing="10">
+            <Text text="Choose Your Color:"/>
+            <HBox alignment="CENTER" spacing="15">
+                <RadioButton fx:id="whiteRadio" text="White"/>
+                <RadioButton fx:id="blackRadio" text="Black"/>
+            </HBox>
+        </VBox>
+
+        <VBox alignment="CENTER" spacing="10">
+            <Text text="AI Difficulty:"/>
+            <ComboBox fx:id="difficultyCombo" prefWidth="150"/>
+        </VBox>
+
+        <HBox alignment="CENTER" spacing="15">
+            <Button fx:id="startGameButton" text="Start Game" onAction="#onStartGame" styleClass="primary-button"/>
+            <Button fx:id="backButton" text="Back" onAction="#onBack" styleClass="secondary-button"/>
+        </HBox>
+    </VBox>
+
+</VBox>
